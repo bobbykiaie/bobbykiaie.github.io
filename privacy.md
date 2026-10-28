@@ -6,19 +6,19 @@ permalink: /privacy/
 
 # Set by Set Privacy Policy
 
-Effective date: August 3, 2026
+Effective date: October 27, 2026
 
 Set by Set is a strength-training planning and workout-tracking app. This policy explains what data the app accesses, how it uses that data, and the choices available to you.
 
 ## Data Set by Set Handles
 
-Set by Set can store routines, custom exercises, training preferences, completed workouts, exercise notes, repetitions, weights, RPE or RIR, rest times, progress records, and derived per-set cardio-response information you create in the app. If you enable iCloud sync, routines, custom exercises, your active-routine choice, and exercise-library edits can sync through your private iCloud account. Workout history, exercise progress, notes, effort ratings, heart-rate information, and connected-health summaries remain stored locally on your device and are not synced through iCloud.
+Set by Set can store routines, custom exercises, training preferences, completed workouts, exercise notes, repetitions, weights, RPE or RIR, rest times, progress records, and derived per-set cardio-response information you create in the app. If you enable iCloud sync, routines, custom exercises, your active-routine choice, exercise-library edits, and a copy of your workout history (exercises, sets, repetitions, weights, rest times, effort ratings, and notes) can sync through your private iCloud account. Heart-rate information, cardio-response metrics, and connected-health summaries are left out of that copy; they remain stored locally on your device and are never synced through iCloud.
 
 If you choose to connect Apple Health, Set by Set can read the recent health and fitness categories shown in Apple's permission sheet: steps, active energy, sleep, resting heart rate, heart-rate variability, workouts, and date of birth. Date of birth is used only to estimate maximum heart rate for training-zone displays. With separate permission, Set by Set can write completed strength workouts to Apple Health. Set by Set reduces the records it reads to short daily summaries for in-app fitness features.
 
-During an active workout, you may optionally stream heart rate from the Set by Set Apple Watch companion or a nearby device that exposes the standard Bluetooth Heart Rate Service, such as a compatible Fitbit device or chest strap. Live samples are processed on device to show BPM and attribute a cardio response to each set. A compact per-set trace and summary can be stored with your local workout history; the full live stream is discarded when the session ends. Bluetooth device names and readings are not sent to the developer.
+During an active workout, you may optionally stream heart rate from the Set by Set Apple Watch companion or a nearby device that exposes the standard Bluetooth Heart Rate Service, such as a compatible Fitbit device or chest strap. Live samples are processed on device to show BPM and calculate cardio-response metrics. Native-cadence workout signals are stored in a separate device-local record keyed to that workout; they are not placed in the iCloud history record. Deleting the workout deletes its signal record. Bluetooth RR intervals are used only when the sensor actually supplies them and are never inferred from BPM.
 
-This public Release does not offer Google sign-in or Google Health access. Google Health support is hidden and inactive while its restricted OAuth scopes await production verification. The binary still contains Google Sign-In components for development compatibility. Google Sign-In's signed privacy manifest states that, if invoked in a future release, the SDK may collect account contact information, user and device identifiers, coarse location, usage data, and other authorization-related data for app functionality and analytics. Set by Set does not invoke that flow in this Release and does not use those categories for advertising or tracking.
+This public Release does not offer Google sign-in or Google Health access, and it contains no Google Sign-In components. Google Health support waits on Google's production verification of its restricted OAuth scopes; if a future release adds it, this policy will be updated first to describe what the Google Sign-In SDK collects.
 
 ## Purchases and Subscriptions
 
@@ -26,9 +26,9 @@ Set by Set Pro is sold through Apple's In-App Purchase system. Apple processes t
 tells Set by Set only whether an active entitlement exists — the developer never receives your
 name, card details, billing address, or Apple Account credentials, and has no access to them.
 
-The app stores a single local flag recording whether Pro is active, so paid features keep working
-without a network connection. That flag stays on your device; it is not part of the app's iCloud
-sync and is not sent to the developer.
+The app stores local entitlement capabilities so purchased local features keep working offline.
+For Pro users, Lifetime included, who opt into cloud AI, Set by Set verifies an Apple-signed
+transaction and stores pseudonymous entitlement, App Attest, monthly-usage, and service metadata.
 
 Purchase history, refunds, and subscription management are handled by Apple. See Apple's Privacy
 Policy for how Apple handles payment information.
@@ -43,17 +43,17 @@ Set by Set uses Apple platform services only for the functions you choose. Integ
 
 ## AI Features
 
-On supported Apple devices, Set by Set can use Apple Foundation Models to answer coaching questions, parse routine documents, and help create or refine plans. Deterministic app features remain available without AI. When you separately enable health-aware coaching, Set by Set uses only a compact seven-day summary and forces the request to the on-device Apple model. Raw HealthKit samples and live heart-rate readings are not included in that AI request.
+Set by Set preserves deterministic tools and can use Apple's on-device Foundation Model on supported devices. Pro users, Lifetime included, may separately opt in to developer-operated cloud coaching. Cloud consent can be revoked at any time. Health-derived cloud context has its own off-by-default control and payload preview.
 
-When Apple Intelligence is available, this release uses Apple's on-device Foundation Model. Coach and other model-backed entry points are hidden when the system model is unavailable. Set by Set does not operate an AI server or retain model prompts on a developer-controlled server.
+Anthropic processes cloud requests with its Claude models as Set by Set's service provider. A request may include the prompt, bounded selected workout or routine summaries, deterministic tool results, evidence identifiers, and optional compact health-derived status context. It excludes raw heart-rate samples, full traces, daily HealthKit samples, full history, and unrelated notes. The Set by Set gateway stores no prompts, replies, routines, workout context, heart rate, or HealthKit summaries. Anthropic states that it does not train its models on API data by default; Set by Set does not opt in to sharing data for training. Anthropic may retain content for a limited period for safety and abuse monitoring.
 
 ## Data Retention and Deletion
 
-You can delete individual workouts and routines in Set by Set or delete the app to remove its local data. You can disable Apple Watch heart-rate tracking in the heart-rate connection menu, disconnect a Bluetooth sensor, and change or revoke Apple Health permissions in the Health app or iOS Settings. Locally stored Apple Health summaries are removed when the app is deleted. Content previously synced through iCloud is managed through your Apple account and Apple's iCloud controls.
+You can delete individual workouts and routines in Set by Set or delete the app to remove its local data. Deleting a workout also deletes its signal record. You can revoke cloud consent, disable Apple Watch heart-rate tracking, disconnect Bluetooth, and revoke Apple Health permissions. Limited pseudonymous entitlement, security, credit-ledger, and service metadata may be retained for fraud prevention, refunds, accounting, and legal obligations.
 
 ## Security and Transfers
 
-Set by Set uses platform security features such as app sandboxing, Keychain-backed authorization managed by integrated providers, and private iCloud storage. Internet transfers to Apple use encrypted connections. The inactive Google components in this release do not expose a public sign-in flow; any future enabled provider connection will use encrypted transport. No security method is perfect, but Set by Set is designed to minimize data sent off the device.
+Set by Set uses platform security features such as app sandboxing, App Attest, short-lived service tokens, encrypted transport, server-held AI credentials, and private iCloud storage. Cloud requests use pseudonymous subjects and are rate- and concurrency-limited. No security method is perfect, but Set by Set is designed to minimize data sent off the device.
 
 ## Children
 

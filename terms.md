@@ -6,7 +6,7 @@ permalink: /terms/
 
 # Set by Set Terms of Use
 
-Effective date: August 3, 2026
+Effective date: October 26, 2026
 
 By using Set by Set, you agree to these terms. If you do not agree, do not use the app.
 
@@ -20,21 +20,28 @@ Set by Set does not require a Set by Set account. Optional features may use your
 
 ## AI-Generated Information
 
-AI-assisted text can be incomplete or inaccurate. Review any generated routine or recommendation before relying on it. Deterministic training calculations are provided for convenience and are not a substitute for professional judgment.
+AI-assisted text can be incomplete or inaccurate. Review any generated routine or recommendation before relying on it. Cloud and on-device output remains general fitness information and is not a substitute for professional judgment. Do not use the coach for emergencies.
 
 ## Subscriptions and Purchases
 
-Set by Set is free to download and use for workout logging, the exercise library, Apple Watch
-logging, iCloud sync, up to three routines, and the most recent three months of history.
+Set by Set is free to download and use for workout logging, the exercise library, records, iCloud
+sync, up to three routines, and the most recent three months of history.
 
-Set by Set Pro unlocks analytics and trends, full history, personal records, recovery readiness,
-cardio analytics, the AI coach, adaptive recommendations, AI routine generation, routine import,
-and Bluetooth heart-rate monitors. It is offered as:
+Every Pro purchase unlocks next-set targets and deloads, the Apple Watch app, heart-rate insights
+with Apple Watch or a Bluetooth heart-rate monitor, warm-ups and cardio blocks, charts and full
+history, mid-workout changes, instant workouts, unlimited routines and plans, workout debriefs,
+weekly check-ins, and Coach. It is offered as:
 
 - **Set by Set Pro — Monthly**, one month, $3.99 (US), auto-renewing
 - **Set by Set Pro — Yearly**, one year, $24.99 (US), auto-renewing, with a 7-day free trial for
   new subscribers
 - **Set by Set Pro — Lifetime**, a single non-renewing purchase, $69.99 (US)
+
+Every Pro plan includes a monthly allowance of cloud coaching requests that doesn't roll over:
+Monthly and Yearly include 60 Coach answers a month, and Lifetime includes 30, with smaller
+allowances for plan building, plan changes and imports. A request that fails isn't counted. Past
+an allowance, Coach keeps answering on your device until the month resets. No top-ups are sold in
+version 1.0.
 
 Prices are shown in your local currency inside the app and may differ by region.
 
