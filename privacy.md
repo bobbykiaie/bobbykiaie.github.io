@@ -6,7 +6,7 @@ permalink: /privacy/
 
 # Set by Set Privacy Policy
 
-Effective date: October 27, 2026
+Effective date: November 9, 2026
 
 Set by Set is a strength-training planning and workout-tracking app. This policy explains what data the app accesses, how it uses that data, and the choices available to you.
 
@@ -32,6 +32,17 @@ transaction and stores pseudonymous entitlement, App Attest, monthly-usage, and 
 
 Purchase history, refunds, and subscription management are handled by Apple. See Apple's Privacy
 Policy for how Apple handles payment information.
+
+## Data Collected by the Cloud Service
+
+Most of Set by Set runs on your device. The data below is collected only when you use cloud-backed Pro features, such as cloud coaching and its monthly credit allowance. Each record is keyed to an identifier derived from your App Store purchase, so the App Store privacy label lists this data as linked to you, even though Set by Set never receives your name, email, or Apple Account.
+
+- **User ID.** A salted hash of your App Store original transaction identifier, and App Attest key identifiers for your devices. Used for app functionality (authorizing cloud features, keeping your credit balance, preventing fraud and abuse) and for analytics (counting how many people use cloud features).
+- **Purchase history.** Your Pro product, entitlement state, and purchase and expiration dates. Used to decide which features you can use.
+- **Usage data.** For each cloud request: the type of task, its credit cost, the AI model used, input and output token counts, estimated cost, response time, and an error category if it failed. Used to enforce your allowance and rate limits, and for analytics: measuring reliability, response time, and cost so the service can be operated and improved.
+- **Health, fitness, and other user content.** When you send a cloud coaching request, its prompt, selected workout or routine summaries, and, only if you turn on the separate control, compact health-derived status are sent to Anthropic to produce the reply, as described under AI Features. The Set by Set gateway does not store this content.
+
+Analytics are computed by Set by Set from these records; the app contains no third-party analytics or advertising SDK. This data is not used for advertising or tracking, is not sold, and is not combined with data from other companies.
 
 ## How Data Is Used
 
