@@ -6,7 +6,7 @@ permalink: /privacy/
 
 # Set by Set Privacy Policy
 
-Effective date: November 9, 2026
+Effective date: November 26, 2026
 
 Set by Set is a strength-training planning and workout-tracking app. This policy explains what data the app accesses, how it uses that data, and the choices available to you.
 
@@ -19,6 +19,20 @@ If you choose to connect Apple Health, Set by Set can read the recent health and
 During an active workout, you may optionally stream heart rate from the Set by Set Apple Watch companion or a nearby device that exposes the standard Bluetooth Heart Rate Service, such as a compatible Fitbit device or chest strap. Live samples are processed on device to show BPM and calculate cardio-response metrics. Native-cadence workout signals are stored in a separate device-local record keyed to that workout; they are not placed in the iCloud history record. Deleting the workout deletes its signal record. Bluetooth RR intervals are used only when the sensor actually supplies them and are never inferred from BPM.
 
 This public Release does not offer Google sign-in or Google Health access, and it contains no Google Sign-In components. Google Health support waits on Google's production verification of its restricted OAuth scopes; if a future release adds it, this policy will be updated first to describe what the Google Sign-In SDK collects.
+
+## Optional Accounts
+
+Set by Set can be used without creating an account. Optional account creation is offered during initial app onboarding (`Continue without an account` is always available) and in **Settings → Account**. If you choose to sign in with Apple, Set by Set stores your account identifier, optional display name, optional `@handle`, avatar color choice, optional short bio, profile visibility preference (`private` or `public`), email address (including Apple Private Relay addresses if you hide your email), active session tokens, and—when you hold Pro—a link to your pseudonymous App Store subscription subject.
+
+You can edit your profile or delete your account at any time in **Settings → Account → Delete account**. Deleting your account removes your server-side profile, handle, identities, and sessions, and revokes your Sign in with Apple token with Apple. Local plans and workout history on your device are not deleted unless you remove them yourself.
+
+## Social Sharing, Community Plans, and Competitions
+
+If you choose to share a plan or workout recap link, Set by Set stores the shared plan or lifting-only workout summary (exercises, sets, reps, weights, duration, and optional caption) under a share link associated with your account. Public profiles are searchable by `@handle` when visibility is set to **Public**. When viewing plans in the **Community** catalog, signed-in users may optionally submit a 1–5 star rating, written review, and helpful votes; deleting an account removes those ratings and votes and recalculates plan rating summaries.
+
+Signed-in users may also join or host optional, free friend Effort & Consistency competitions via invite codes or links. Competition check-ins upload only qualifying session dates, qualifying duration, set counts, personal-record counts/flags, and earned bonus flags needed to calculate leaderboard points under the competition rules. Heart-rate data, cardio-response metrics, Apple Health data, bodyweight, raw exercise loads/weights/reps, and private workout notes are never uploaded to competitions or included in shared workouts or plans.
+
+You can set your profile to **Private** (default) or **Public**, unpublish any shared plan or workout, leave or delete competition check-ins, and report content or block users across profiles, shared plans, shared workouts, plan reviews, and competitions directly in the app. Deleting your account permanently deletes your shared plans, shared workouts, plan ratings, competition memberships/check-ins/kudos, follow relationships, and block list.
 
 ## Purchases and Subscriptions
 
